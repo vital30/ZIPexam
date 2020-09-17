@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>ZIP</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-container">
+            
+            <div  class="header" id="header">
+
+                <div class="nav" id="nav">
+                    <div class="brand">
+                        <a href="/">
+                            <img src="images/ziprecruiter-blacktext.svg" width="155" height="34" alt="ZipRecruiter">
+                        </a>
+                    </div>
+                    
+                    <ul class="menu">
+                        <li><a href=""><span>Jobs</span></a></li>
+                        <li><a href=""><span>Salaries</span></a></li>
+                        <li><a href=""><span>Messages</span></a></li>
+                        <li><a href=""><span>Profile</span></a></li>
+                        <li><a href=""><span>Post a Job</span></a></li>
+                        <li><a href=""><span>Sign In</span></a></li>
+                    </ul>
+
+                    <a href="javascript:void(0);" class="icon" onclick="menuResizer()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+
+                <div class="search-form">
+                    <input id="mobile-search" type="button" value="Software engineer, Sun Francisco, CA USA" onclick="openSearchForm()"/>
+
+                    <form id="searchForm">
+                        <input class="search" type="text" value="software engineer"/>
+                        <input class="location" type="text" value="Sun Francisco, CA USA"/>
+
+                        <div class="submit">
+                            <input type="submit" value="Search Jobs">
+                          </div>
+                    </form>
+
+                    <div id="open-filter" class="open-filter" onclick="openFilter()">Filter</div>
+                    <div id="close-filter" class="close-filter" onclick="closeFilter()">Close</div>
+
+                    <div id="close-search" class="close-search" onclick="closeSearchForm()">Close</div>
+
+                </div>
+
+                <div id="filter" class="filter">
+                    <select id="time">
+                        <option >Posted any time</option>
+                        <option>Within 30 days</option>
+                        <option>Within 10 days</option>
+                        <option>Within 5 days</option>
+                        <option>Within 1 day1</option>
+                    </select>
+
+                    <select id="miles">
+                        <option selected>Within 5 miles</option>
+                        <option>Within 10 miles</option>
+                        <option>Within 25 miles</option>
+                        <option>Within 50 miles</option>
+                        <option>Within 100 miles</option>
+                        <option>Any Distance</option>
+                    </select>
+
+                    <select id="salarie">
+                        <option selected>All Salaries</option>
+                        <option>$135,000+ <span>(3453)</span></option>
+                        <option>$150,000+ <span>(3453)</span></option>
+                        <option>$160,000+ <span>(3453)</span></option>
+                        <option>$170,000+ <span>(3453)</span></option>
+                    </select>
+
+                    <select id="type">
+                        <option selected>All Employment types</option>
+                        <option>Full Time<span>(53)</span></option>
+                        <option>Contract <span>(33)</span></option>
+                        <option>Part Time <span>(33)</span></option>
+                        <option>Contract to Hire <span>(34)</span></option>
+
+                    </select>
+
+                    <select id="title">
+                        <option selected>All Titles</option>
+                        <option>Software Engineer<span>(53)</span></option>
+                        <option>Product Designer<span>(53)</span></option>
+                        <option>QA Engineer<span>(53)</span></option>
+                        <option>Full Time<span>(53)</span></option>
+                    </select>
+
+                    <select id="companie">
+                        <option selected>All Companies</option>
+                        <option>Oracle<span>(53)</span></option>
+                        <option>Amazaon<span>(53)</span></option>
+                        <option>Uber<span>(53)</span></option>
+                        <option>Google<span>(53)</span></option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="breadcrams">
+                <span><a>All Jobs</a></span> / 
+                <span><a>Software Engineer Jobs</a></span> / 
+                <span><a>Software Engineer Jobs in San Francisco, CA</a></span>
+            </div>
+
+
+            <div class="main-content">
+                <h3>29+ Software Engineer Jobs in San Francisco, CA USA</h3>
+
+                <article>
+                    <div class="job-content">
+                        <div class="topcontent">
+                            <p class="logo"><img src="images/bussines.svg" alt="Gusto" class="logo" width="32" height="18"></p>  
+                            <div class="details">
+                                <span class="content-title">Principal Media Streaming Software Engineer 
+                                    <strong class="new">NEW!</strong>
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="info">
+                            <a href="#" class="company">Lambda School</a>   
+                            <a href="#" class="location">San Francisco, CA</a>
+                            <div class="pay"><span>Pay</span><p>$100.000 to $170.000 Anually</p></div>
+                            <div class="type"><span>Type</span><p>Part Time</p></div>
+                        </div>
+                        <div class="description">
+                            <p >Design, <b>develop</b> and maintain the software infrastructure that powers
+                                our <b>Carbon</b> Health apps * Partner with fellow engineers to innovate, architect,
+                                develop and scale Carbon * Health's development ...
+                            </p>
+ 
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <button class="quickaplly">Quick Apply</button>
+                        <button class="favorites"> 
+                             <span class="tooltiptext">Save Job For later</span>
+                        </button>
+                    </div>
+                    <span class="reportjob"><a href="#">Report Job</a></span>
+                </article>
+
+
+                <article>
+                    <div class="job-content">
+                        <div class="topcontent">
+                            <p class="logo"><img src="images/bussines.svg" alt="Gusto" class="logo" width="32" height="18"></p>  
+                            <div class="details">
+                                <span class="content-title">Software Engineer 
+                                    <strong class="new">NEW!</strong>
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="info">
+                            <a href="#" class="company">Lambda School</a>   
+                            <a href="#" class="location">San Francisco, CA</a>
+                            <div class="pay"><span>Pay</span><p>$100.000 to $170.000 Anually</p></div>
+                            <div class="type"><span>Type</span><p>Part Time</p></div>
+                        </div>
+                        <div class="description">
+                            <p >Design, <b>develop</b> and maintain the software infrastructure that powers
+                                our <b>Carbon</b> Health apps * Partner with fellow engineers to innovate, architect,
+                                develop and scale Carbon * Health's development ...
+                            </p>
+ 
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <button class="quickaplly">Quick Apply</button>
+                        <button class="favorites"> 
+                             <span class="tooltiptext">Save Job For later</span>
+                        </button>
+                    </div>
+                    <span class="reportjob"><a href="#">Report Job</a></span>
+                </article>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/css/msdropdown/dd.css">
+        <script src="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/js/msdropdown/jquery.dd.min.js"></script> -->
+        <script src="script.js" ></script>
+    </body>
+</html>

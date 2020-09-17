@@ -3,6 +3,44 @@ body {
     background-color: #fafbfc;
 }
 
+.topnav {
+    overflow: hidden;
+  }
+  
+  .topnav>div a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+    background-image: url(images/menu-hamburger.svg);
+    background-size: 29px;
+    background-position: 13px 13px;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .topnav.responsive .icon {
+    background-image: url(images/green-hamburger.svg);
+  }
+  
+  
+
 .nav {
     overflow: hidden;
     display:flex;
@@ -633,22 +671,22 @@ select {
 }
 
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
       float: right;
       display: block;
     }
   }
-  
-  @media screen and (max-width: 767px) {
+   */
+@media screen and (max-width: 992px) {
     .nav.responsive {position: relative;}
     .nav.responsive .icon {
       position: absolute;
       right: 0;
       top: 0;
     }
-    .nav.responsive a {
+    .nav.responsive .icon {
       float: none;
       display: block;
       text-align: left;
@@ -709,7 +747,9 @@ select {
 
     .filter{
         display: none;
-        width: 82%;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 10px;
     }
     #open-filter {
         display: inline-block;
@@ -782,8 +822,8 @@ select {
         float: none;
         border: 1px solid !important;
         border-radius: 0;
-        margin-top: 5px;
-        width: 82% !important;
+        width: 90% !important;
+        margin: 5px auto;
     }
 
     .filter .dd .ddChild {
@@ -795,5 +835,38 @@ select {
     .main-content article .reportjob {
         bottom: 30px;
     }
-  }
 
+
+
+
+
+    .topnav>div {display: none;}
+    .topnav .icon {
+      float: right;
+      display: block;
+    }
+    
+    .topnav.responsive>div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 51px;
+        right: 36px;
+        z-index: 1;
+        background-color: #ffffff;
+
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(133,133,133,0.3);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(133,133,133,0.3);
+        box-shadow: 0px 0px 10px 2px rgba(133,133,133,0.3);    }
+
+    .topnav.responsive>div:before {
+        content: ' ';
+        height: 0;
+        position: absolute;
+        width: 0;
+        left: 74px;
+        top: -19px;
+        border: 10px solid transparent;
+        border-bottom-color: #ffffff;
+      }
+  }

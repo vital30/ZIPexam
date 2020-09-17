@@ -17,18 +17,18 @@
                         </a>
                     </div>
                     
-                    <ul class="menu">
-                        <li><a href=""><span>Jobs</span></a></li>
-                        <li><a href=""><span>Salaries</span></a></li>
-                        <li><a href=""><span>Messages</span></a></li>
-                        <li><a href=""><span>Profile</span></a></li>
-                        <li><a href=""><span>Post a Job</span></a></li>
-                        <li><a href=""><span>Sign In</span></a></li>
-                    </ul>
+                    <div class="topnav" id="myTopnav">
+                        <div>
+                            <a href=""><span>Jobs</span></a>
+                            <a href=""><span>Salaries</span></a>
+                            <a href=""><span>Messages</span></a>
+                            <a href=""><span>Profile</span></a>
+                            <a href=""><span>Post a Job</span></a>
+                            <a href=""><span>Sign In</span></a>
+                        </div>
+                        <span href="#" class="icon" onclick="menuResizer()"></span>
 
-                    <a href="javascript:void(0);" class="icon" onclick="menuResizer()">
-                    <i class="fa fa-bars"></i>
-                    </a>
+                    </div>
                 </div>
 
 
@@ -44,8 +44,8 @@
                           </div>
                     </form>
 
-                    <div id="open-filter" class="open-filter" onclick="openFilter()">Filter</div>
-                    <div id="close-filter" class="close-filter" onclick="closeFilter()">Close</div>
+                    <div id="open-filter" class="open-filter" onclick="toggleFilter()">Filter</div>
+                    <!-- <div id="close-filter" class="close-filter" onclick="closeFilter()">Close</div> -->
 
                     <div id="close-search" class="close-search" onclick="closeSearchForm()">Close</div>
 
@@ -185,8 +185,8 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- <link rel="stylesheet" href="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/css/msdropdown/dd.css">
-        <script src="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/js/msdropdown/jquery.dd.min.js"></script> -->
+        <link rel="stylesheet" href="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/css/msdropdown/dd.css">
+        <script src="http://www.marghoobsuleman.com/mywork/jcomponents/image-dropdown/samples/js/msdropdown/jquery.dd.min.js"></script>
         <script src="script.js" ></script>
     </body>
 </html>

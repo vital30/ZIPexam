@@ -23,16 +23,28 @@ function menuResizer() {
     document.getElementById("close-search").style.display = 'none';
   }
 
-  function openFilter(){
-    document.getElementById("filter").style.display = 'block';
-    document.getElementById("open-filter").style.display = 'none';
-    document.getElementById("close-filter").style.display = 'inline-block';
-  }
+//   function openFilter(){
+//     document.getElementById("filter").style.display = 'block';
+//     document.getElementById("open-filter").style.display = 'none';
+//     document.getElementById("close-filter").style.display = 'inline-block';
+//   }
 
-  function closeFilter(){
-    document.getElementById("filter").style.display = 'none';
-    document.getElementById("open-filter").style.display = 'inline-block';
-    document.getElementById("close-filter").style.display = 'none';
+//   function closeFilter(){
+//     document.getElementById("filter").style.display = 'none';
+//     document.getElementById("open-filter").style.display = 'inline-block';
+//     document.getElementById("close-filter").style.display = 'none';
+//   }
+
+  function toggleFilter() {
+    var filter = document.getElementById("filter");
+    var filterToggle = document.getElementById("open-filter");
+    if (filterToggle.innerText === "Filter") {
+        filter.style.display = "block";
+        filterToggle.innerText = "Close"
+    } else {
+        filter.style.display = "none";
+        filterToggle.innerText = "Filter"
+    }
   }
 
   $(document).ready(function(e) {
@@ -49,11 +61,11 @@ function menuResizer() {
 
         });
 
-        // try {
-        //   $("select").msDropDown();
-        // } catch(e) {
-        //   alert(e.message);
-        // }
+        try {
+          $("select").msDropDown();
+        } catch(e) {
+          alert(e.message);
+        }
 
    });
 
